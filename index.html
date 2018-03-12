@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>男性健康指标</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col-sm-8 offset-sm-2">
+                <div class="form-group row">
+                    <label for="weight" class="col-sm-3 col-form-label">性别</label>
+                    <div class="col-sm-6 input-group">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="sex" checked id="inlineRadio1" value="0">
+                          <label class="form-check-label" for="inlineRadio1">男</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="sex" id="inlineRadio2" value="1">
+                          <label class="form-check-label" for="inlineRadio2">女</label>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="form-group row">
+                    <label for="weight" class="col-sm-3 col-form-label">体重</label>
+                    <div class="col-sm-6 input-group">
+                        <input type="number" class="form-control" id="weight" placeholder="体重">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon1">Kg</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label">身高</label>
+                    <div class="col-sm-6 input-group">
+                        <input type="number" class="form-control" id="height" placeholder="身高">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label">腰围</label>
+                    <div class="col-sm-6 input-group">
+                        <input type="number" class="form-control" id="yaowei" placeholder="腰围">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <button class="btn btn-primary" id="btnSubmit">查看结果</button>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class="col-sm-9">
+                        <div class="card">
+                            <div class="card-header">
+                                体脂率
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="tizhi">测试结果：<strong></strong></h5>
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                          <th style="width : 25%;">类型</th>
+                                          <th style="width : 25%;">性别</th>
+                                          <th style="width : 50%;">参考范围</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>成年人</td>
+                                            <td>男</td>
+                                            <td>15%～18%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成年人</td>
+                                            <td>女</td>
+                                            <td>20%~25%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>运动员</td>
+                                            <td>男</td>
+                                            <td>7%～15%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>成年人</td>
+                                            <td>女</td>
+                                            <td>12%~25%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                         <br/>
+                                                
+                        <div class="card">
+                            <div class="card-header">
+                                BMI指数
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="bmi">BMI：<strong></strong></h5>
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                          <th style="width : 50%;">类型</th>
+                                          <th style="width : 50%;">参考范围</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>成年人</td>
+                                            <td>18.5% ～ 23.9%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>                                                                                                
+                    </div>                    
+                </div>                
+                
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function tizhi(a, b, c) {
+            var p1 = a * 0.74,
+                p2 = b * 0.082,
+                p3 = 0,
+                p4 = 0
+            //  如果是女性
+            if(c) {
+                p2 += 34.89
+            } else {
+                p2 += 44.74
+            }
+            p3 = p1 - p2
+            p4 = (p3 * 100 / b).toFixed(2)
+            return {
+                p3, p4
+            }
+        }
+        
+        
+        function bmi(a, b) {
+            return (a / Math.pow(b / 100, 2)).toFixed(2)
+        }
+        
+        $(document).ready(function() {
+            $('#btnSubmit').on('click', function(event) {
+                var sex = $('[name=sex]:checked').val() === '1',
+                    weight = $('#weight').val(),
+                    height = $('#height').val(),
+                    yaowei = $('#yaowei').val(),
+                    zhif = tizhi(yaowei, weight, sex),
+                    bmp = bmi(weight, height),
+                    output = '脂肪重量：' + zhif.p3 + 'Kg，' + '体脂率：' + zhif.p4 + '%'
+                $('#tizhi strong').text(output);
+                $('#bmi strong').text(bmp);
+                event.preventDefault();
+            })
+        })
+    </script>
+</body>
+
+</html>
